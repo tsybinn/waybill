@@ -1,0 +1,277 @@
+.wrapple {
+    #border:1px solid red;
+    margin-bottom: 110px;
+
+
+}
+.print-doc{
+    position:fixed;
+    top:5px;
+    left:90%;
+
+
+}
+
+.week{
+    padding:10px;
+}
+.info{
+    display:flex;
+}
+.checkbox{
+    display:flex;
+}
+.way {
+
+    #border: 2px solid black;
+    margin:  0 auto;
+    width: 900px;
+    height: 1200px;
+    background-image: url(../img/fon.jpg);
+    background-size: 100%;
+}
+
+.inputStyle {
+
+    width: 150px;
+    outline: none;
+    border: none;
+    #border-bottom-width: 1px;
+    #border-bottom-style: solid;
+    #border-bottom-color: black;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.inputStyle:active {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.ogrn {
+    position: relative;
+    top: 75px;
+    left: 90px;
+}
+
+.inn {
+    position: relative;
+    top: 94px;
+    left: -85px;
+}
+
+
+.namberWay {
+    position: relative;
+    top: 90px;
+    left: 0px;
+}
+
+.dateIn {
+    width: 100px;
+    position: relative;
+    top: 147px;
+    left: -210px;
+}
+
+.dateTo {
+    position: relative;
+    top: 147px;
+    left: -150px;
+}
+
+.nameOrganization {
+    position: relative;
+    top: 165px;
+    left: 230px;
+}
+
+.organizationNamber {
+    position: relative;
+    top: 168px;
+    left: 330px;
+}
+
+.ogrn2 {
+    position: relative;
+    top: 187px;
+    left: -420px;
+}
+
+.adress {
+    width: 290px;
+    position: relative;
+    top: 187px;
+    left: 100px;
+}
+
+.model {
+    position: relative;
+    top: 183px;
+    left: 190px;
+    #bottom: 600px;
+
+}
+
+.numberCar {
+
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.driver {
+    width: 260px;
+    position: relative;
+    top: 218px;
+    left: -180px;
+}
+
+.certificateSeries {
+
+    width: 100px;
+    position: relative;
+    top: 237px;
+    left: -300px;
+}
+
+.certificateNumber {
+    width: 80px;
+    position: relative;
+    top: 236px;
+    left: -255px;
+}
+.certificateTo {
+    padding-left: 0;
+    width: 100px;
+    position: relative;
+    top: 215px;
+    left: 640px;
+}
+
+.licenseSeries {
+    padding-left: 0;
+    width: 60px;
+    position: relative;
+    top: 255px;
+    left: 230px;
+}
+
+.licenseNumber {
+    padding-left: 0;
+    width: 60px;
+    position: relative;
+    top: 252px;
+    left: 350px;
+}
+
+.licenseTo {
+    padding-left: 0;
+    width: 90px;
+    position: relative;
+    top: 236px;
+    left: 410px;
+}
+
+.licenseResolution{
+    padding-left: 0;
+    width: 90px;
+    position: relative;
+    top: 253px;
+    left: 370px;
+}
+
+
+.dispatcherName {
+    padding-left: 0;
+    width: 90px;
+    position: relative;
+    top: 275px;
+    left: 60px;
+}
+
+.mechanicName{
+
+    padding-left: 0;
+    width: 90px;
+    position: relative;
+    top: 315px;
+    left: 210px;
+
+}
+
+.dateMechanic{
+    padding-left: 0;
+    width: 115px;
+    position: relative;
+    top: 358px;
+    left: -130px;
+}
+
+.dateGo{
+    padding-left: 0;
+    width: 115px;
+    position: relative;
+    top: 464px;
+    left: -250px;
+}
+
+.dateGoTo{
+    padding-left: 0;
+    width: 115px;
+    position: relative;
+    top: 482px;
+    left: 478px;
+}
+.mechanicName2{
+    position: relative;
+    top:500px;
+    left:70px;
+}
+.mechanicName3{
+    position: relative;
+    width:100px;
+    top:573px;
+    left:165px;
+}
+.medic{
+    position: relative;
+    width:100px;
+    top:883px;
+    left:-80px;
+}
+.medicDate{
+    position: relative;
+    width:110px;
+    top:843px;
+    left:-297px;
+}
+
+.medicDate2{
+    position: relative;
+    width:125px;
+    top:903px;
+    left:-8px;
+}
+.medic2{
+    position: relative;
+    width:110px;
+    top:915px;
+    left:700px;
+}
+
+.driverName{
+    position: relative;
+    width:110px;
+    top:333px;
+    left:595px
+}
+
+.driverName2{
+    position: relative;
+    width:110px;
+    top:515px;
+    left:190px
+}
+
+

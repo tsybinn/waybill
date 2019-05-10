@@ -1,6 +1,7 @@
 <form method="POST">
     <div class="picker">
-        <div class="inputDate"><label>Введите дату начала:<input class="dateStart" type="text" name="dateStart"></label>
+        <div class="inputDate"><label>Введите дату начала:<input class="dateStart" type="text" name="dateStart"
+                                                                 placeholder="d.m.Y"></label>
         </div>
 
         <div class="checkbox">
@@ -17,9 +18,9 @@
     <input class="submit" type="submit" name="submitDays" value="Создать">
 
 </form>
-<?php if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submitDays'])) {?>
-<div class="info">
-    <div class="howMuch"><p>Создано путевых на <?=$_POST['days']?> дней</p></div>
-    <a class ="print-doc" href="javascript:(print());"><img src="print.jpg" width="100" height="100"></a>
-</div>
-<?php }?>
+<?php if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submitDays'])) { ?>
+    <div class="info">
+        <div class="howMuch"><p>Создано путевых на <?= $_POST['days'] ?> дней</p></div>
+        <a class="print-doc" href="javascript:(print());"><img src="img/print.jpg" width="100" height="100"></a>
+    </div>
+<?php } ?>

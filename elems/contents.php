@@ -1,10 +1,15 @@
 <?php
 
 $days = $_POST['days'];
+$dateStart = $_POST['dateStart'];
+$number = (int)$wayBill->readLast('logFile.txt'); // last number in log file
+//var_dump($number);
 for ($i = 1; $i <= $days; $i++) {
-    $namber = $_SESSION['number']++;//session namberWay
-    $dateStart = $_POST['dateStart'];
-    $min = $i - 1;// in dateTime
+    $number += 1;
+    if ($i == $days) {
+        $wayBill->logFile($number); //write last number in log file
+    }
+    $min = $i - 1;// in dateTime + day
 
     if ($i == 1) {
         $datetime = new DateTime($dateStart);
@@ -22,13 +27,12 @@ for ($i = 1; $i <= $days; $i++) {
     $dateTo = $datetime->format('d-m-y');
     $dateGoTo = $datetime->format('d.m.y') . "  7:03";
 
-
     print "<div class=\"wrapple\">
     <div class=\"way\">
 
         <input class=\"ogrn inputStyle\" type=\"text\" name=\"ogrn\" value=\"318366800091807\">
         <input class=\"inn inputStyle\" type=\"text\" name=\"inputStyle\" value=\"312330488634\">
-        <input class=\"namberWay inputStyle\" type=\"text\" name=\"namberWay\" value= \"$namber\">
+        <input class=\"namberWay inputStyle\" type=\"text\" name=\"namberWay\" value= \"$number\">
         <input class=\"dateIn inputStyle\" type=\"text\" name=\"dateIn\" value=\"$date\">
         <input class=\"dateTo inputStyle\" type=\"text\" name=\"dateTo\" value=\"$dateTo\">
         <input class=\"nameOrganization inputStyle\" type=\"text\" name=\"nameOrganization\" value=\"ИП Цыбин А.Ю.\">
@@ -46,7 +50,7 @@ for ($i = 1; $i <= $days; $i++) {
         <input class=\"licenseNumber inputStyle\" type=\"text\" name=\"licenseNumber\" value=\"226138\">
         <input class=\"licenseTo inputStyle\" type=\"text\" name=\"licenseTo\" value=\"\">
         <input class=\"licenseResolution inputStyle\" type=\"text\" name=\"licenseResolution\" value=\"234861\">
-        <input class=\"dispatcherName inputStyle\" type=\"text\" name=\"dispatcherName\" value=\"Мавиенко С.А\">
+        <input class=\"dispatcherName inputStyle\" type=\"text\" name=\"dispatcherName\" value=\"Уханев С.А.\">
         <input class=\"mechanicName inputStyle\" type=\"text\" name=\"mechanicName\" value=\"Уханев С.А.\">
 
         <input class=\"dateMechanic inputStyle\" type=\"text\" name=\"dateMechanic\" value=\"$dateMechanic\">

@@ -1,4 +1,7 @@
 <?php
+if ($_POST['driver'] == 'tsybin'){
+    $drivers = $driverTs;
+}else $drivers = $driverSu;
 
 $days = $_POST['days'];
 $dateStart = $_POST['dateStart'];
@@ -40,16 +43,16 @@ for ($i = 1; $i <= $days; $i++) {
         <input class=\"adress inputStyle\" type=\"text\" name=\"adress\" value=\"  Матвеевская д.5 k1\">
 
         <input class=\"ogrn2 inputStyle\" type=\"text\" name=\"ogrn\" value=\"318366800091807\">
-        <input class=\"model inputStyle\" type=\"text\" name=\"model\" value=\"хендай\">
-        <input class=\"numberCar inputStyle\" type=\"text\" name=\"numberCar\" value=\"A611XC777\">
-        <input class=\"driver inputStyle\" type=\"text\" name=\"driver\" value=\"Цыбин Анатолий Юрьевич\">
-        <input class=\"certificateSeries inputStyle\" type=\"text\" name=\"certificateSeries\" value=\"36 27\">
-        <input class=\"certificateNumber inputStyle\" type=\"text\" name=\"certificateNumber\" value=\"868364\">
-        <input class=\"certificateTo inputStyle\" type=\"text\" name=\"certificateTo\" value=\"10.06.2026\">
-        <input class=\"licenseSeries inputStyle\" type=\"text\" name=\"licenseSeries\" value=\"MO\">
-        <input class=\"licenseNumber inputStyle\" type=\"text\" name=\"licenseNumber\" value=\"226138\">
+        <input class=\"model inputStyle\" type=\"text\" name=\"model\" value=\"$drivers[model]\">
+        <input class=\"numberCar inputStyle\" type=\"text\" name=\"numberCar\" value=\"$drivers[numberCar]\">
+        <input class=\"driver inputStyle\" type=\"text\" name=\"driver\" value=\"$drivers[driver]\">
+        <input class=\"certificateSeries inputStyle\" type=\"text\" name=\"certificateSeries\" value=\"$drivers[certificateSeries]\">
+        <input class=\"certificateNumber inputStyle\" type=\"text\" name=\"certificateNumber\" value=\"$drivers[certificateNumber]\">
+        <input class=\"certificateTo inputStyle\" type=\"text\" name=\"certificateTo\" value=\"$drivers[certificateTo]\">
+        <input class=\"licenseSeries inputStyle\" type=\"text\" name=\"licenseSeries\" value=\"$drivers[licenseSeries]\">
+        <input class=\"licenseNumber inputStyle\" type=\"text\" name=\"licenseNumber\" value=\"$drivers[licenseNumber]\">
         <input class=\"licenseTo inputStyle\" type=\"text\" name=\"licenseTo\" value=\"\">
-        <input class=\"licenseResolution inputStyle\" type=\"text\" name=\"licenseResolution\" value=\"234861\">
+        <input class=\"licenseResolution inputStyle\" type=\"text\" name=\"licenseResolution\" value=\"$drivers[licenseResolution]\">
         <input class=\"dispatcherName inputStyle\" type=\"text\" name=\"dispatcherName\" value=\"Уханев С.А.\">
         <input class=\"mechanicName inputStyle\" type=\"text\" name=\"mechanicName\" value=\"Уханев С.А.\">
 

@@ -6,13 +6,19 @@
 
         <div class="checkbox">
 
-            <label class="week"><input type="checkbox" name="days" value="1">1 дeнь</label>
-            <label class="week"><input type="checkbox" name="days" value="2">2 дня</label>
-            <label class="week"><input type="checkbox" name="days" value="3">3 дня</label>
-            <label class="week"><input type="checkbox" name="days" value="4">4 дня</label>
-            <label class="week"><input type="checkbox" name="days" value="5">5 дней</label>
-            <label class="week"><input type="checkbox" name="days" value="6">6 дней</label>
-            <label class="week"><input type="checkbox" name="days" value="7">7 дней</label>
+            <label class="week"><input type="radio" name="days" value="1">1 дeнь</label>
+            <label class="week"><input type="radio" name="days" value="2">2 дня</label>
+            <label class="week"><input type="radio" name="days" value="3">3 дня</label>
+            <label class="week"><input type="radio" name="days" value="4">4 дня</label>
+            <label class="week"><input type="radio" name="days" value="5">5 дней</label>
+            <label class="week"><input type="radio" name="days" value="6">6 дней</label>
+            <label class="week"><input type="radio" name="days" value="7">7 дней</label>
+
+        </div>
+        <div class="checkboxDr">
+
+            <label class="checkD"><input type="radio" name="driver" value="sukach">sukach</label>
+            <label class="checkD"><input type="radio" name="driver" value="tsybin">tsybin</label>
         </div>
     </div>
     <input class="submit" type="submit" name="submitDays" value="Создать">

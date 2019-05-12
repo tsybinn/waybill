@@ -15,6 +15,6 @@
         include "elems/contents.php";
     ?>
 </div>
-<footer>footer</footer>
+<footer><p>Внимание!!!! данные путевые листы  являются не действительными. Служат только в учебных целях</p></footer>
 </body>
 </html>

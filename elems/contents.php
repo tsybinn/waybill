@@ -2,11 +2,11 @@
 if ($_POST['driver'] == 'tsybin'){
     $drivers = $driverTs;
 }else $drivers = $driverSu;
-
 $days = $_POST['days'];
 $dateStart = $_POST['dateStart'];
 $number = (int)$wayBill->readLast('logFile.txt'); // last number in log file
-//var_dump($number);
+$surName =   getSurname($drivers); //pull initials  of massive;
+
 for ($i = 1; $i <= $days; $i++) {
     $number += 1;
     if ($i == $days) {
@@ -26,8 +26,8 @@ for ($i = 1; $i <= $days; $i++) {
     $medicDate = $datetime->format('d.m.y') . "  7:00";
     //date + one day
     $dateTo = $datetime->modify('+1 day');
-    $medicDate2 = $datetime->format('d-m-y') . "  7:03";
-    $dateTo = $datetime->format('d-m-y');
+    $medicDate2 = $datetime->format('d.m.y') . "  7:03";
+    $dateTo = $datetime->format('d.m.y');
     $dateGoTo = $datetime->format('d.m.y') . "  7:03";
 
     print "<div class=\"wrapple\">
@@ -59,7 +59,7 @@ for ($i = 1; $i <= $days; $i++) {
         <input class=\"dateMechanic inputStyle\" type=\"text\" name=\"dateMechanic\" value=\"$dateMechanic\">
         <input class=\"dateGo inputStyle\" type=\"text\" name=\"dateGo\" value=\"$dateGo\">
         <input class=\"dateGoTo inputStyle\" type=\"text\" name=\"dateGoTo\" value=\"$dateGoTo\">
-        <input class=\"mechanicName2 inputStyle\" type=\"text\" name=\"mechanicName2\" value=\"Цыбин А.Ю\">
+        <input class=\"mechanicName2 inputStyle\" type=\"text\" name=\"mechanicName2\" value=\"$surName\">
         <input
             class=\"mechanicName3 inputStyle\" type=\"text\" name=\"mechanicName3\" value=\"Уханев С.А.\">
         <input
@@ -70,8 +70,8 @@ for ($i = 1; $i <= $days; $i++) {
             class=\"medicDate2 inputStyle\" type=\"text\" name=\"medicDate2\" value=\"$medicDate2\">
         <input
             class=\"medic2 inputStyle\" type=\"text\" name=\"medic2\" value=\"Рощина С.А.\">
-        <input class=\"driverName inputStyle\" type=\"text\" name=\"driverName\" value=\"Цыбин А.Ю.\">
-        <input class=\"driverName2 inputStyle\" type=\"text\" name=\"driverName\" value=\"Цыбин А.Ю.\">
+        <input class=\"driverName inputStyle\" type=\"text\" name=\"driverName\" value=\"$surName\">
+        <input class=\"driverName2 inputStyle\" type=\"text\" name=\"driverName\" value=\"$surName\">
 
     </div>
 </div>";

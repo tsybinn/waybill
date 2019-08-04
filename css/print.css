@@ -8,8 +8,12 @@ footer{
 }
 
 .wrapple {
+
     #border:1px solid red;
-    margin-bottom: 110px;
+    #margin-bottom: 210px;
+    size: A4 landscape;
+    zoom:180%;
+
 
 
 }

@@ -1,11 +1,19 @@
 <?php
 if ($_POST['driver'] == 'tsybin'){
     $drivers = $driverTs;
-}else $drivers = $driverSu;
+}
+if($_POST['driver'] == 'major'){
+    $drivers = $major;
+}
+
+if($_POST['driver'] == 'sukach'){
+    $drivers = $driverSu;
+}
+
 $days = $_POST['days'];
 $dateStart = $_POST['dateStart'];
 $number = (int)$wayBill->readLast('logFile.txt'); // last number in log file
-$surName =   getSurname($drivers); //pull initials  of massive;
+$surName =  $wayBill->getSurname($drivers); //pull initials  of massive;
 
 for ($i = 1; $i <= $days; $i++) {
     $number += 1;
@@ -23,7 +31,7 @@ for ($i = 1; $i <= $days; $i++) {
     $date = $datetime->format('d.m.y');
     $dateMechanic = $datetime->format('d.m.y') . "  7:00";
     $dateGo = $datetime->format('d.m.y') . "  7:05";
-    $medicDate = $datetime->format('d.m.y') . "  7:00";
+    $medicDate = $datetime->format('d.m.y') . "  6:55";
     //date + one day
     $dateTo = $datetime->modify('+1 day');
     $medicDate2 = $datetime->format('d.m.y') . "  7:03";
@@ -33,16 +41,16 @@ for ($i = 1; $i <= $days; $i++) {
     print "<div class=\"wrapple\">
     <div class=\"way\">
 
-        <input class=\"ogrn inputStyle\" type=\"text\" name=\"ogrn\" value=\"318366800091807\">
-        <input class=\"inn inputStyle\" type=\"text\" name=\"inputStyle\" value=\"312330488634\">
+        <input class=\"ogrn inputStyle\" type=\"text\" name=\"ogrn\" value=\"$drivers[ogrn]\">
+        <input class=\"inn inputStyle\" type=\"text\" name=\"inputStyle\" value=\"$drivers[inn]\">
         <input class=\"namberWay inputStyle\" type=\"text\" name=\"namberWay\" value= \"$number\">
         <input class=\"dateIn inputStyle\" type=\"text\" name=\"dateIn\" value=\"$date\">
         <input class=\"dateTo inputStyle\" type=\"text\" name=\"dateTo\" value=\"$dateTo\">
-        <input class=\"nameOrganization inputStyle\" type=\"text\" name=\"nameOrganization\" value=\"ИП Цыбин А.Ю.\">
+        <input class=\"nameOrganization inputStyle\" type=\"text\" name=\"nameOrganization\" value=\"$drivers[ip]\">
         <input class=\"organizationNamber inputStyle\" type=\"text\" name=\"organizationNamber\" value=\"8-926-969-20-46\">
         <input class=\"adress inputStyle\" type=\"text\" name=\"adress\" value=\"  Матвеевская д.5 k1\">
 
-        <input class=\"ogrn2 inputStyle\" type=\"text\" name=\"ogrn\" value=\"318366800091807\">
+        <input class=\"ogrn2 inputStyle\" type=\"text\" name=\"ogrn\" value=\"$drivers[ogrn]\">
         <input class=\"model inputStyle\" type=\"text\" name=\"model\" value=\"$drivers[model]\">
         <input class=\"numberCar inputStyle\" type=\"text\" name=\"numberCar\" value=\"$drivers[numberCar]\">
         <input class=\"driver inputStyle\" type=\"text\" name=\"driver\" value=\"$drivers[driver]\">
@@ -67,7 +75,7 @@ for ($i = 1; $i <= $days; $i++) {
         <input
             class=\"medicDate inputStyle\" type=\"text\" name=\"medicDate\" value=\"$medicDate\">
         <input
-            class=\"medicDate2 inputStyle\" type=\"text\" name=\"medicDate2\" value=\"$medicDate2\">
+            class=\"medicDate2 inputStyle\" type=\"text\" name=\"medicDate2\" value=\"\">
         <input
             class=\"medic2 inputStyle\" type=\"text\" name=\"medic2\" value=\"Рощина С.А.\">
         <input class=\"driverName inputStyle\" type=\"text\" name=\"driverName\" value=\"$surName\">

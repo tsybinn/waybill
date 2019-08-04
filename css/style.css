@@ -1,38 +1,59 @@
 
+.submit {
+    width: 120px;
+    height: 30px;
+    background: #375980;
+    border: 1px solid #375980;
+    font-size: 18px;
+    color: white;
+}
+
+
 html {
-    width:100%;
+    width: 100%;
     position: absolute;
     min-height: 100%;
 }
 
 .wrapple {
-    #border:1px solid red;
-    margin-bottom: 110px;
-
-
-}
-.print-doc{
-    position:fixed;
-    top:5px;
-    left:90%;
+    #border: 1px solid red;
+    margin-bottom: 40px;
 
 
 }
 
-.week{
-    padding:10px;
+header {
+    width: 400px;
+    #min-width: 300px;
+    margin: 0 auto;
+    #border: 1px solid red;
 }
-.info{
-    display:flex;
+
+.print-doc {
+    position: fixed;
+    top: 5px;
+    left: 90%;
+
+
 }
-.checkbox{
-    display:flex;
+
+.week {
+    padding: 10px;
 }
+
+.info {
+    display: flex;
+}
+
+.checkbox {
+    display: flex;
+}
+
 .way {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     #border: 2px solid black;
-    margin:  0 auto;
+    margin: 0 auto;
     width: 900px;
     height: 1200px;
     background-image: url(../img/fon.jpg);
@@ -149,6 +170,7 @@ html {
     top: 236px;
     left: -255px;
 }
+
 .certificateTo {
     padding-left: 0;
     width: 100px;
@@ -181,7 +203,7 @@ html {
     left: 410px;
 }
 
-.licenseResolution{
+.licenseResolution {
     padding-left: 0;
     width: 90px;
     position: relative;
@@ -198,7 +220,7 @@ html {
     left: 60px;
 }
 
-.mechanicName{
+.mechanicName {
 
     padding-left: 0;
     width: 90px;
@@ -208,7 +230,7 @@ html {
 
 }
 
-.dateMechanic{
+.dateMechanic {
     padding-left: 0;
     width: 115px;
     position: relative;
@@ -216,7 +238,7 @@ html {
     left: -130px;
 }
 
-.dateGo{
+.dateGo {
     padding-left: 0;
     width: 115px;
     position: relative;
@@ -224,68 +246,129 @@ html {
     left: -250px;
 }
 
-.dateGoTo{
+.dateGoTo {
     padding-left: 0;
     width: 115px;
     position: relative;
     top: 482px;
     left: 478px;
 }
-.mechanicName2{
+
+.mechanicName2 {
     position: relative;
-    top:500px;
-    left:70px;
-}
-.mechanicName3{
-    position: relative;
-    width:100px;
-    top:573px;
-    left:165px;
-}
-.medic{
-    position: relative;
-    width:100px;
-    top:883px;
-    left:-80px;
-}
-.medicDate{
-    position: relative;
-    width:110px;
-    top:843px;
-    left:-297px;
+    top: 500px;
+    left: 70px;
 }
 
-.medicDate2{
+.mechanicName3 {
     position: relative;
-    width:125px;
-    top:903px;
-    left:-8px;
-}
-.medic2{
-    position: relative;
-    width:110px;
-    top:915px;
-    left:700px;
+    width: 100px;
+    top: 573px;
+    left: 165px;
 }
 
-.driverName{
+.medic {
     position: relative;
-    width:110px;
-    top:333px;
-    left:595px
+    width: 100px;
+    top: 883px;
+    left: -80px;
 }
 
-.driverName2{
+.medicDate {
     position: relative;
-    width:110px;
-    top:515px;
-    left:190px
+    width: 110px;
+    top: 843px;
+    left: -297px;
+}
+
+.medicDate2 {
+    position: relative;
+    width: 125px;
+    top: 903px;
+    left: -8px;
+}
+
+.medic2 {
+    position: relative;
+    width: 110px;
+    top: 915px;
+    left: 700px;
+}
+
+.driverName {
+    position: relative;
+    width: 110px;
+    top: 333px;
+    left: 595px
+}
+
+.driverName2 {
+    position: relative;
+    width: 110px;
+    top: 515px;
+    left: 190px
 }
 
 footer {
     width: 90%;
     height: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
 
+}
+
+form {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.vibor {
+    padding-left: 20px;
+}
+
+.btn-group-toggle {
+    padding-top: 10px;
+}
+
+body {
+    background-image: url('../img/font1.png');
+    background-size: cover;
+    #background: rgb(255, 255, 0);
+    #opacity: 0.1;
+}
+
+.centr {
+
+    padding-left: 70px;
+}
+
+.butC {
+    margin-left: 80px;
+}
+
+.d {
+    padding-top: 10px;
+    width: 100px;
+    margin: 0 18%;
+    #width: 80px;
+}
+.inputDate input {
+    margin-left: 20px;
+    height: 20px;
+    font-size: 16px;
+    #background: #bbbbbb;
+    opacity: 0.6;
+}
+.inputDate label {
+    width: 200px;
+}
+.a {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.addNewDriver {
+    width: 100px;
+    margin: 10px auto;
+    margin-bottom: 10px;
 }
